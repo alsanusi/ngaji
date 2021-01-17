@@ -5,7 +5,7 @@ export default function Description() {
 
     return (
         <div>
-            <Typography variant="h6" align="left" gutterBottom>
+            <Typography variant="h6" align="left">
                 <b>Assalamualaikum,</b>
             </Typography>
             <Typography variant="subtitle1" align="left" style={{ opacity: '0.5' }}>

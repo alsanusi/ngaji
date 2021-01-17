@@ -11,7 +11,8 @@ const useStyles = makeStyles({
         minWidth: 275,
         backgroundColor: '#000',
         color: '#fff',
-        borderRadius: '15px'
+        borderRadius: '0px 15px 0px 15px',
+        boxShadow: 'rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; '
     },
 });
 
@@ -20,7 +21,7 @@ export default function SimpleCard() {
 
     return (
         <Card className={classes.root}>
-            <CardContent style={{ paddingTop: 10, paddingBottom: 10 }}>
+            <CardContent style={{ paddingTop: 15, paddingBottom: 15}}>
                 <Grid container spacing={2}>
                     <Grid item xs={2}>
                         <Typography variant="h6">
@@ -31,12 +32,12 @@ export default function SimpleCard() {
                         <Typography variant="h6" align="left">
                             <b>Al Fatihah</b>
                         </Typography>
-                        <Typography variant="subtitle2" align="left" style={{ marginTop: '-5px', opacity: '0.5' }}>
+                        <Typography variant="body2" align="left" style={{ marginTop: '-5px', opacity: '0.5' }}>
                             Surat Pembuka
                         </Typography>
                     </Grid>
                     <Grid item xs={3} style={{ alignSelf: 'center' }}>
-                        <img src={ReadMore} alt="Ngaji" style={{ width: "50%" }} />
+                        <img src={ReadMore} alt="Ngaji" style={{ width: "40%" }} />
                     </Grid>
                 </Grid>
             </CardContent>
