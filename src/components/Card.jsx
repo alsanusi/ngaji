@@ -20,7 +20,7 @@ export default function SimpleCard() {
 
     return (
         <Card className={classes.root}>
-            <CardContent style={{ paddingTop: 19, paddingBottom: 19 }}>
+            <CardContent style={{ paddingTop: 10, paddingBottom: 10 }}>
                 <Grid container spacing={2}>
                     <Grid item xs={2}>
                         <Typography variant="h6">
